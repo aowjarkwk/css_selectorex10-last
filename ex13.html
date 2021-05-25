@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>상태선택자</title>
+    <!-- 상태: 포커스, 활성화, 비활성화, 체크됨 -->
+    <!-- Enabled : 활성화된 상태(기본값) -->
+    <!-- Disabled : 비활성화된 상태, 입력(클릭)불가 -->
+    <!-- Focus : 입력 대기 상태 -->
+
+    <!-- 속성 선택시: [] 대괄호 -->
+    <!-- 반응 선택시: : 콜론 -->
+    <!-- 상태 선택시: : 콜론 -->
+
+    <!-- css선택자 심볼 -->
+    <!-- 여러태그 선택 : , -->
+    <!-- 후손 선택 : 공백 -->
+    <!-- 맏아들 선택 : > -->
+    <!-- 동위레벨 다음 : + -->
+    <!-- 동위레벨 여러개 : ~ -->
+    <!-- 클래스 : . -->
+    <!-- 아이디 : # -->
+    <style>
+        /* input태그중에 활성화된 것만 선택 */
+        input:enabled {
+            background-color: red;
+        }
+        /* input태그중에 비활성화된 것만 선택 */
+        input:disabled{
+            background-color: gray;
+        }
+        /* 포커스(focus) : 입력가능상태(마우스클릭, 탭키) */
+        input:focus{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>활성화상태</h1>
+    <input type="text">
+    <h1>비활성화 상태</h1>
+    <input type="text" disabled="disabled">
+</body>
+
+</html>

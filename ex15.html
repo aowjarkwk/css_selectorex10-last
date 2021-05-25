@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS 연습문제4</title>
+    <!-- 1. 아이템1에 마우스 hover시 글자색 red로 -->
+    <!-- 2. 아이템2에 마우스 click시 글자색 blue로 -->
+    <!-- 3. 입력1에 포커스가 되면 배경색을 green으로 -->
+    <!-- DM에 스샷(코드)를 올려주세요. -->
+    <!-- 필요시에는 id,class를 사용해도 됨. -->
+    <style>
+        li:first-child:hover{
+            color:red;
+        }
+        li:nth-child(2):active{
+            color:blue;
+        }
+        #focus:focus{
+            background-color: green;
+        }
+        /* nth-child는 2개이상 태그 동작안됨. */
+        /* nth-of-type을 사용 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>아이템1</li>
+        <li>아이템2</li>
+        <li>아이템3</li>
+        <li>아이템4</li>
+        <li>아이템5</li>
+        <input id="focus"type="text" value="입력1">
+        <input type="text" value="입력2">
+        <input type="text" value="입력3">
+    </ul>
+</body>
+
+</html>

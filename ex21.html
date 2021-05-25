@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>부정 선택자 - 반대편 선택자</title>
+    <!-- Not selector -->
+    <!-- ...가 아닌 것을 선택하자 -->
+    <!-- not() 함수를 사용한다. -->
+    <style>
+        /* input태그 중 type이 password가 아닌 것 */
+        input:not([type=password]){
+            background-color: red;
+        }
+        input:not([type=text]){
+            background-color: orange;
+        }
+        input:hover{
+            background-color: plum;
+        }
+        input:focus{
+            background-color: blue;
+        }
+        body :not(p) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="text"><br>
+    <input type="password"><br>
+    <h1>Lorem</h1>
+    <p>Lorem</p>
+</body>
+</html>

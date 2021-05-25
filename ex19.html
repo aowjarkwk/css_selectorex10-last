@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>문자 선택</title>
+    <!-- 첫번째 글자(문자) 선택 -->
+    <!-- 첫번째 줄 선택 -->
+    <!-- 심볼문자 :: 콜론 2개 -->
+    <style>
+        /* 첫번째 글자 */
+
+        p::first-letter{
+         /*3em:3배 크기, 16px * 3 = 48px  */
+            font-size:3em;
+        }
+        /* 첫번째 줄 */
+        p::first-line{
+            color:plum;
+        }
+        /* 커서 드래그로 선택된 글자만 */
+        p::selection{
+            background-color: yellow;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>동해물과 백두산이</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint adipisci repellendus distinctio. Dicta consectetur laudantium asperiores voluptatibus, sunt odit omnis recusandae repellat sint iste porro, similique voluptatum ipsum non maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero, itaque, nemo sed, dolores delectus labore recusandae explicabo illo laborum nostrum adipisci soluta architecto consequuntur eaque sequi excepturi odit minima.</p>
+</body>
+</html>

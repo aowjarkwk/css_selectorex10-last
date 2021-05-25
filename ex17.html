@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>n번째 선택자 - 상속관계에서</title>
+    <style>
+        /* div밑의 3개의 p태그중 첫번째 p태그만 선택 */
+        p:nth-child(1){
+            color: red;
+        }
+        /* 선택이 안됨. */
+        div p:nth-child(1){
+            color:blue;
+        }
+        /* 상속관계에서는 nth-child가 아니라  nth-of-type을 사용한다.*/
+        div p:nth-of-type(1){
+            background-color:aqua;
+        }
+        div p:first-of-type{
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>Text - 1</div>
+        <p>Text - 2</p>
+        <p>Text - 3</p>
+        <p>Text - 4</p>
+    </div>
+</body>
+</html>
